@@ -1,0 +1,157 @@
+* {
+    margin: 0px;
+    border: 0px;
+    font-family: "Roboto";
+}
+
+.contenedor {
+    display: flex;
+    height: 100vh;
+}
+
+.chat {
+    background-color: #FFF;
+    height: 100%;
+    flex: 0 0 20%;
+    /* ancho fijo de la barra lateral */
+    border-right: 2px solid #BEC1BB;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15%;
+}
+
+.usuario-principal {
+    flex: 0 0 60px;
+    /* altura fija para la cabecera */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid #BEC1BB;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* centra verticalmente */
+    gap: 10px;
+    /* espacio entre imagen y texto */
+    padding: 10px;
+}
+
+.btn-container {
+    flex: 0 0 80px;
+    /* altura fija del botón */
+    border-bottom: 1px solid #BEC1BB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+}
+
+.btn {
+    background-color: #A491D2;
+    color: #fff;
+    padding: 20px;
+    width: 80%;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #CDC3E6;
+    /* un poco más oscuro */
+}
+
+.btn:active {
+    background-color: #BEC1BB;
+    /* aún más oscuro */
+}
+
+.contactos {
+    flex: 1 0 auto;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    /* apilar contactos */
+}
+
+.contacto {
+    flex: 0 0 80px;
+    /* altura fija */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* centra verticalmente */
+    gap: 10px;
+    padding: 0 50px;
+    border-bottom: 2px solid #BEC1BB;
+    cursor: pointer;
+}
+
+.imagen-contacto {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* circular */
+}
+
+.principal {
+    background-color: #D4DCFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-basis: 85%;
+    text-align: center;
+    /* centra el texto */
+}
+
+.logo {
+    width: 250px;
+    /* ajusta tamaño similar al ejemplo */
+    height: auto;
+    background-color: #A491D2;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+
+h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #1B1F21;
+}
+
+p {
+    font-size: 14px;
+}
+
+.subtitulo {
+    font-size: 16px;
+    color: #1B1F21;
+}
+
+.foto-usuario {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+i {
+    padding: 10px;
+    font-size: 150%;
+    color: #828485;
+}
+
+.usuario p {
+    font-size: 10px;
+    color: #BEC1BB;
+}

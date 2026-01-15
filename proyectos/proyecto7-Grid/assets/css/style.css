@@ -1,0 +1,94 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar {
+    background-color: rgb(218, 255, 6);
+    grid-area: navbar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.asidebar {
+    background-color: rgb(95, 252, 74);
+    grid-area: asidebar;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    background-color: rgb(26, 168, 7);
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+.footer {
+    background-color: rgb(218, 255, 6);
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 2fr 20fr 1fr;
+    grid-template-areas:
+        'navbar navbar'
+        'asidebar main'
+        'footer footer';
+}
+
+.box {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px black;
+    background-color: rgba(255, 255, 255, 0.678);
+}
+
+.box p {
+    font-size: 16px;
+}
+
+.lista-productos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.box button {
+    width: 100%;            
+    padding: 12px;
+    background-color: #1e3a8a; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.box button:hover {
+    background-color: #2563eb;
+}
+h5{
+    font-size: 30px;
+}

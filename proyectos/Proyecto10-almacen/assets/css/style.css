@@ -1,0 +1,95 @@
+/* ===== BASE ===== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&w=1600&q=80') center / cover fixed;
+    color: #2e2e2e;
+}
+
+/* ===== NAVBAR ===== */
+.navbar-brand span {
+    background: linear-gradient(90deg, #4caf50, #8bc34a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+/* ===== HERO ===== */
+.hero {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 6rem 0;
+}
+
+.hero h1 {
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+/* ===== PRODUCTOS ===== */
+.productos {
+    background-color: #f1f8e9;
+    padding: 5rem 0;
+}
+
+.product-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    height: 200px;
+    object-fit: contain;
+    background-color: white;
+}
+
+.price {
+    font-weight: bold;
+    color: #388e3c;
+}
+
+/* ===== MAPA ===== */
+.mapas {
+    background-color: #ffffff;
+    padding: 5rem 0;
+}
+
+.map-container {
+    max-width: 900px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #2e7d32;
+    color: white;
+    padding: 1.5rem 0;
+}
+
+/* ===== WHATSAPP ===== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    font-size: 26px;
+    padding: 14px 18px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
