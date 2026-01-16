@@ -1,50 +1,48 @@
-/* ===== BASE ===== */
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: url('https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&w=1600&q=80') center / cover fixed;
+    background: #f5f7f2;
     color: #2e2e2e;
 }
 
-/* ===== NAVBAR ===== */
-.navbar-brand span {
-    background: linear-gradient(90deg, #4caf50, #8bc34a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    font-size: 1.4rem;
-}
-
-/* ===== HERO ===== */
-.hero {
-    background: rgba(255, 255, 255, 0.95);
-    padding: 6rem 0;
-}
-
-.hero h1 {
+.navbar-brand {
     font-weight: bold;
     color: #2e7d32;
 }
 
-/* ===== PRODUCTOS ===== */
-.productos {
-    background-color: #f1f8e9;
+.hero {
+    background: #ffffff;
+    padding: 6rem 0;
+}
+
+.hero h1 {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.confianza {
+    background: #ffffff;
+    padding: 4rem 0;
+}
+
+.confianza h4 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+}
+
+.catalogo {
+    background: #f1f8e9;
     padding: 5rem 0;
 }
 
-.product-card {
+.card {
     border: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.product-card:hover {
+.card:hover {
     transform: translateY(-6px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.product-card img {
-    height: 200px;
-    object-fit: contain;
-    background-color: white;
 }
 
 .price {
@@ -52,19 +50,16 @@ body {
     color: #388e3c;
 }
 
-/* ===== MAPA ===== */
-.mapas {
-    background-color: #ffffff;
+.mapa {
     padding: 5rem 0;
+    background: #ffffff;
 }
 
 .map-container {
-    max-width: 900px;
-    height: 400px;
-    margin: 0 auto;
-    border-radius: 12px;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .map-container iframe {
@@ -73,23 +68,41 @@ body {
     border: 0;
 }
 
-/* ===== FOOTER ===== */
 .footer {
-    background-color: #2e7d32;
+    background: #2e7d32;
     color: white;
     padding: 1.5rem 0;
 }
 
-/* ===== WHATSAPP ===== */
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #25d366;
+    background: #25d366;
     color: white;
     font-size: 26px;
     padding: 14px 18px;
     border-radius: 50%;
     text-decoration: none;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* GALERIA */
+.galeria {
+    background: #ffffff;
+    padding: 5rem 0;
+}
+
+.carousel-inner img {
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Ajuste solo para PC */
+@media (min-width: 992px) {
+    .carousel-inner img {
+        object-fit: contain;
+        background-color: #4797e7;
+    }
 }
