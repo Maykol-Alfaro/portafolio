@@ -63,7 +63,7 @@ const projects = [
         description:
             "Donde la Riveritos, almacen local. HTML - CSS - js -Proyecto de almacen local.",
         image: "./assets/img/desafio10captura.png",
-        link: "./proyectos/proyecto10-almacen/index.html",
+        link: "./proyectos/proyecto-almacen/index.html",
     },
     // 👉 aquí puedes seguir agregando hasta 10 o más
 ];
