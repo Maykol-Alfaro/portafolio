@@ -65,7 +65,7 @@ const projects = [
         image: "./assets/img/desafio10captura.png",
         link: "./proyectos/proyecto-almacen/index.html",
     },
-    // 👉 aquí puedes seguir agregando hasta 10 o más
+    // 👉 aquí puedes seguir agregando hasta 10 o más, recuerda las mayusculas y minusculas en el nombre del proyecto
 ];
 
 const container = document.getElementById("projects-container");
